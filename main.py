@@ -29,7 +29,7 @@ def get_top_10(file_name):
     long_words = []
     with open(file_name) as text_file:
         for line in text_file:
-            words_list = line.split()
+            words_list = line.lower().split()
             for word in words_list:
                 if len(word) <= 6:
                     pass
